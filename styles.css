@@ -1,106 +1,134 @@
-#style_HW{
+#style_HW {
     color: rgb(203, 26, 26);
 }
 
-hr{
+hr {
     width: 50%;
     align-self: center;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 10px;
 }
-span{
+
+span {
     color: brown;
-    font-size:large;
+    font-size: large;
     font-family: 'Fugaz One', cursive;
 
 }
 
-.fontsExample{
-    color:crimson;
+.fontsExample {
+    color: crimson;
     font-family: 'IM Fell English SC', serif;
     font-size: medium;
 }
-img.imagenPrueba{
+
+img.imagenPrueba {
     align-self: center;
     width: 50%;
 }
 
-a{
+a {
     color: rgba(52, 49, 49, 0.502);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: palevioletred;
 }
 
-#Bloque_com{
+#Bloque_com {
     width: 80%;
     margin: auto;
     padding: 10px;
 }
-#Bloque_izq{
+
+#Bloque_izq {
     width: 40%;
     float: left;
 }
 
-#Bloque_der{
+#Bloque_der {
     width: 40%;
     float: right;
 }
 
-ul{
+ul {
     list-style: georgian;
     padding-left: 10px;
 }
-ul.list_Nav{
- list-style: none;   
+
+ul.list_Nav {
+    list-style: none;
 }
-ul#first_list li{
+
+ul#first_list li {
     display: inline-block;
     padding-right: 15px;
 }
 
-#imagen_fondo{
+#imagen_fondo {
     background-color: antiquewhite;
     width: 600px;
     height: 600px;
     background-image: url(/Imagen_prueba_2.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: 35px 50px;
 }
 
-table{
+table {
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
     background-color: beige;
 }
 
-td.col1{
-    width:20%;
-}
-td.col2{
-    width:40%;
+td.col1 {
+    width: 20%;
 }
 
-table, td,th{
- border:2px solid white;
- text-align: center;
+td.col2 {
+    width: 40%;
 }
 
-td,th{
+table,
+td,
+th {
+    border: 2px solid white;
+    text-align: center;
+}
+
+td,
+th {
     padding: 3px 15px;
 }
 
-th{
+th {
     background-color: rgb(210, 171, 171);
 }
-iframe{
-    border:none;
+
+iframe {
+    border: none;
     width: 80%;
     margin: 0 auto;
     display: block;
     height: 300px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+}
+
+label{
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 8px;
 }

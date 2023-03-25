@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -176,7 +176,7 @@ con distintos atributos Ejemplo---onload="alert('Hello')"-->
             </thead>
             <tbody>
                 <tr>
-                    <td  class="col1">Elemento 1</td>
+                    <td class="col1">Elemento 1</td>
                     <td class="col2">Elemento 2</td>
                     <td class="col3">Elemento 3</td>
                 </tr>
@@ -195,30 +195,118 @@ con distintos atributos Ejemplo---onload="alert('Hello')"-->
 
 
         <h2>Iframes</h2>
-        <iframe src="CV_Juan_Marcos_Gonzalez_Romo_ES.pdf" frameborder="10" ></iframe>
+        <iframe src="CV_Juan_Marcos_Gonzalez_Romo_ES.pdf" frameborder="10"></iframe>
 
         <h2>Formularios</h2>
-        <form action="" method="post">
-            <label for="nombre">
-                Nombre
-            </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre(s) "><br>
-            <label for="apellidos">
-                Apellidos
-            </label>
-            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"><br>
-            <label for="clave">
-                Contraseña
-            </label>
-            <input type="password" name="clave" id="clave" placeholder="Contraseña">
-            <input type="number" min="10" max="100" step="5">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Tipo texto</legend>
+                <label for="nombre">
+                    Nombre
+                </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre(s) " required pattern="[a-z]+"><br>
+                <label for="apellidos">
+                    Apellidos
+                </label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required autofocus><br>
 
+                <label for="nombre">
+                    Nombre
+                </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre(s) readonly " readonly><br>
+                <label for="apellidos">
+                    Apellidos
+                </label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos disabled" disabled>
+
+            </fieldset>
+            <fieldset>
+                <legend>Tipo password y number</legend>
+                <label for="clave">
+                    Contraseña
+                </label>
+                <input type="password" name="clave" id="clave" placeholder="Contraseña">
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" min="10" max="100" step="5">
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de prueba</legend>
+
+                <label for="sitio">url:</label>
+                <input type="url" id="sitio" name="sitio"
+                pattern="https?://.+" title="Include http://">
+                
+                <input type="range">
+                <input type="date" name="" id="">
+                <input type="color">
+                <input type="file" name="" id="" accept="image/png">
+                <input type="hidden" name="sitio" id="" value="contaminacion">
+                <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo eligendi quod neque similique aliquid consequatur, nam eveniet esse optio cupiditate labore laboriosam nisi dolore aut tempora eos dicta officia.</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend> Readio y check buttons</legend>
+                <label for="envio_email">
+                    Enviar email
+                </label>
+                <input type="checkbox" name="envio_email" id="envio_email">
+                <label for="llamar">
+                    Llamar por telefono
+                </label>
+                <input type="checkbox" name="llamar" id="llamar" checked><br>
+                <label for="rojo">Rojo</label>
+                <input type="radio" value="rojo" id="rojo" name="color" checked>
+                <label for="verde">Verde</label>
+                <input type="radio" value="verde" id="verde" name="color">
+                <label for="azul">Azul</label>
+                <input type="radio" value="azul" id="azul" name="color">
+                <br>
+                <label for="paises">Paises</label><select name="paises" id="paises">
+                    <optgroup label="Europa">
+                        <option value="es">España</option>
+                        <option value="en">Inglaterra</option>
+                    </optgroup>
+                    <option selected value="mx">Mexico</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="ca">Canada</option>
+                </select>
+
+                <label for="ciudad">Cuidad</label>
+                <input type="text" name="ciudad" id="ciudad" list="nombre_ciudades">
+                <datalist id="nombre_ciudades">
+                    <option value="Guadalajara">
+                    <option value="Zapopan">
+                    <option value="Tonalá">
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar form">
+            <input type="reset" value="Reset"> <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar form</button>
         </form>
+        <h2>Audio</h2>
+        <audio  controls ><source type="audio/mpeg"src="./the-beat-of-nature-122841.mp3"></audio>
+        <h2>Video</h2>
+        <video controls width="30%">
+            <source type="video/mp4" src="./VID-20190716-WA0006.mp4">
+        </video>
+        <h2>Canvas</h2>
+        <canvas id="micanvas" width="450" height="300"></canvas>
+
+
+
 
     </section>
 
     <footer id="final">
-        <a href="#principio">Ir al principio</a>
+        <a href="#first_list">Ir al principio</a>
     </footer>
 </body>
 

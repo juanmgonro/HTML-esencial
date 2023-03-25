@@ -1,0 +1,106 @@
+#style_HW{
+    color: rgb(203, 26, 26);
+}
+
+hr{
+    width: 50%;
+    align-self: center;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 10px;
+}
+span{
+    color: brown;
+    font-size:large;
+    font-family: 'Fugaz One', cursive;
+
+}
+
+.fontsExample{
+    color:crimson;
+    font-family: 'IM Fell English SC', serif;
+    font-size: medium;
+}
+img.imagenPrueba{
+    align-self: center;
+    width: 50%;
+}
+
+a{
+    color: rgba(52, 49, 49, 0.502);
+    text-decoration: none;
+}
+
+a:hover{
+    color: palevioletred;
+}
+
+#Bloque_com{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+#Bloque_izq{
+    width: 40%;
+    float: left;
+}
+
+#Bloque_der{
+    width: 40%;
+    float: right;
+}
+
+ul{
+    list-style: georgian;
+    padding-left: 10px;
+}
+ul.list_Nav{
+ list-style: none;   
+}
+ul#first_list li{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#imagen_fondo{
+    background-color: antiquewhite;
+    width: 600px;
+    height: 600px;
+    background-image: url(/Imagen_prueba_2.jpg);
+    background-repeat:no-repeat;
+    background-position: 35px 50px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+}
+
+td.col1{
+    width:20%;
+}
+td.col2{
+    width:40%;
+}
+
+table, td,th{
+ border:2px solid white;
+ text-align: center;
+}
+
+td,th{
+    padding: 3px 15px;
+}
+
+th{
+    background-color: rgb(210, 171, 171);
+}
+iframe{
+    border:none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 300px;
+}
